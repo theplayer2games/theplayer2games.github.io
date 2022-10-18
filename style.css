@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+/*  background-color: black;*/
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+}
+body{
+    background-color: black;
+}
+.header{
+    padding: 20px 80px;
+    display: flex;
+    justify-content: space-between;
+}
+.header ul{
+    display: flex;
+}
+.header ul li{
+    padding: 5px 20px;
+    list-style: none;
+  
+}
+.header ul li a{
+    text-decoration: none;
+    cursor: pointer;
+    transition: 0.3s all;
+}
+.header ul li a:hover{
+    color: rgb(225, 49, 10);
+    transition: 0.3s all;
+}
+.swiper{
+    width: 100%;
+    height: fit-content;
+}
+.swiper-slide img{
+    width: 100%;
+    height: 350px;
+}
+.swiper .swiper-button-prev, .swiper .swiper-button-next{
+    color: rgb(10, 12, 137);
+}

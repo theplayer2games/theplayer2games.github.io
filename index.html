@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+/>
+    <title>Image Slider</title>
+</head>
+<body>
+    <div class="header">
+        <h1>player2games</h1>
+        <ul>
+            <li><a href="">HOME</a></li>
+            <li><a href="">ADOUT US</a></li>
+            <li><a href="">CONTACT US</a></li>
+            <li><a href="">LOG IN</a></li>
+        </ul>
+    </div>
+    <div class="slider">
+      <!-- Slider main container -->
+    <div class="swiper">
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
+      <!-- Slides -->
+      <div class="swiper-slide"><img src="images/assassins_creed_iv_2-wallpaper-1366x768.jpg" alt=""></div>
+      <div class="swiper-slide"><img src="images/batman_arkham_knight_9-wallpaper-1366x768.jpg" alt=""></div>
+      <div class="swiper-slide"><img src="images/battlefield_3-wallpaper-1366x768.jpg" alt=""></div>
+      <div class="swiper-slide"><img src="images/far_cry_primal_wallpaper21B.jpg" alt=""></div>
+      
+      ...
+    </div>
+    <!-- If we need pagination -->
+    <div class="swiper-pagination"></div>
+  
+    <!-- If we need navigation buttons -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+
+  </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+     <script>
+        const swiper = new Swiper('.swiper', {
+  // Optional parameters
+  autoplay: {
+    delay : 3000,
+    disableOnInteraction: false,
+  },
+  loop: true,
+
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination',
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+
+});
+     </script>
+</body>
+</html>
