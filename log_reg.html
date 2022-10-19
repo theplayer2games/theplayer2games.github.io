@@ -10,29 +10,37 @@
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-        }
-        body{
-            background-color: black;
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         }
         .hero{
             position: absolute;
             height: 100%;
             width: 100%;
+            background-image: linear-gradient(rgba(58, 1, 78, 0.4),rgba(87, 20, 111, 0.4)),url(images/assassins_creed_iv_2-wallpaper-1366x768.jpg);
+            background-size: cover;
+            position: absolute;
+        }
+        .hero img{
+            position: absolute;
+            width: 60px;
+            background-color: #fff;
+            margin: 35px 0 0 40px;
         }
         .form-box{
-            width: 380px;
-            height: 380px;
+            width: 350px;
+            height: 430px;
             position: relative;
-            margin: 6% auto;
-            background-color: white;
+            margin: 12% auto;
+            background-color: #FFF;
             padding: 5px;
             overflow: hidden;
+            border-radius: 70px 0 70px 0;
         }
         .button-box{
             width: 220px;
             margin: 35px auto;
             position: relative;
-            box-shadow: 0 0 20px 9px #ff61241f;
+            box-shadow: 0 0 20px 9px #d6470e1f;
             border-radius: 30px;
         }
         .toggle-btn{
@@ -49,7 +57,7 @@
             position: absolute;
             width: 110px;
             height: 100%;
-            background: linear-gradient(to right, #1070ff, #17ff06);
+            background: linear-gradient(to right, #ff7810, #17ff06);
             border-radius: 30px;
             transition: .5s;
         }
@@ -76,13 +84,13 @@
             cursor: pointer;
             display: block;
             margin: 25px auto;
-            background: linear-gradient(to right, #1070ff, #17ff06);
+            background: linear-gradient(to right, #ff7810, #17ff06);
             border: 0;
             outline: none;
             border-radius: 30px;
         }
         #login{
-            left: 50px;
+            left: 35px;
         }
         #register{
             left: 450px;
@@ -92,6 +100,7 @@
 </head>
 <body>
     <div class="hero">
+        <img src="images/2P_Logo.png" alt="">
         <div class="form-box">
             <div class="button-box">
                 <div id="btn"></div>
@@ -106,6 +115,8 @@
             <form action="" id="register" class="input-group">
                 <input type="text" class="input-field" placeholder="Enter Email Address" required>
                 <input type="text" class="input-field" placeholder="Enter User Name" required>
+                <input type="text" class="input-field" placeholder="Enter Password" required>
+                <input type="text" class="input-field" placeholder="Confirm Password" required>
                 <button type="submit" class="submit-btn">Register</button>
             </form>
         </div>
@@ -118,12 +129,12 @@
 
      function register(){
         x.style.left = "-400px";
-        y.style.left = "50px";
+        y.style.left = "35px";
         z.style.left = "110px";
      }
 
      function login(){
-        x.style.left = "50px";
+        x.style.left = "35px";
         y.style.left = "450px";
         z.style.left = "0";
      }
