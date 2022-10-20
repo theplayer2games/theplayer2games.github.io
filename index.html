@@ -10,62 +10,167 @@
     <title>Player2Games | A utopia for gamers</title>
 </head>
 <body>
-    <div class="header">
-      <a href="index.html"><img  src="images/2P_Logo.png" alt=""></a>
-        <ul>
-            <li><a href="index.html">HOME</a></li>
-            <!-- <li><a href="">DISCOVER</a></li> -->
-            <li><a href="browse.html">BROWSE</a></li>
-            <li><a href="news.html">NEWS</a></li>
-            <li><a href="">WISHLIST</a></li>
-            <li><a href="log_reg.html"><i class="fa-solid fa-user "></i></a></li>
-        </ul>
+  <section>
+    <div class="container">
+          <header>
+            <div class="logo"> <img src="images/2P_Logo.png" alt="">   </div>
+            <nav>
+               <ul>
+                  <li><a href="">HOME</a></li>
+                  <li><a href="">DISCOVER</a></li>
+                  <li><a href="">BROWSE</a></li>
+                  <li><a href="">NEWS</a></li>
+                  <li onclick="butoon()"><i class="fa-solid fa-user"></i></li>
+              </ul>
+           </nav>
+          </header>   
+ 
+          <!-- Content -->
+
+          <div class="content-wrapper">
+             <div class="content-desc">
+                 <h1>PLAYER 2 PLYER</h1>
+                 <p>Although were talking about an update here, Google deciding on how to display your page title in
+                   the search results is nothing new.</p>
+                <p>What is new is that they now want to use one title only, and won’t change it up anymore 
+                  for different search queries.<p>
+             </div>
+             <div class="caracter"></div>
+          </div>
+
     </div>
-    <div class="slider">
-      <!-- Slider main container -->
-    <div class="swiper">
-    <!-- Additional required wrapper -->
-    <div class="swiper-wrapper">
-      <!-- Slides -->
-      <!-- <div class="swiper-slide"><img src="assassins_creed_iv_2-wallpaper-1366x768.jpg" alt=""></div> -->
-      <div class="swiper-slide"><img src="images/batman_arkham_knight_9-wallpaper-1366x768.jpg" alt=""></div>
-      <div class="swiper-slide"><img src="images/battlefield_3-wallpaper-1366x768.jpg" alt=""></div>
-      <div class="swiper-slide"><img src="images/far_cry_primal_wallpaper21B.jpg" alt=""></div>
-      
-      ...
-    </div>
-    <!-- If we need pagination -->
-    <div class="swiper-pagination"></div>
-  
-    <!-- If we need navigation buttons -->
-    <div class="swiper-button-prev"></div>
-    <div class="swiper-button-next"></div>
+  </section>
+
+  <!--  -------------------------------------------   Login /Registor Page ------------------------------------------- -->
+    
+  <div class="login-form" id="loginForm">
+
+    <div class="form-box">
+      <div class="button-box">
+          <div id="btn"></div>
+          <button type="button" class="toggle-btn" onclick="login()">Log In</button>
+          <button type="button" class="toggle-btn" onclick="register()">Register</button>
+      </div>
+      <form  id="login" action="" class="input-group">
+          <input type="text" class="input-field" placeholder="Enter Email Address" required>
+          <input type="text" class="input-field" placeholder="Enter User Name" required>
+          <button type="submit" class="submit-btn"><a href="log_reg.html">Log In</a></button>
+          <p  id="hide-from" onclick="hideForm()">hide</p>
+      </form>
+      <form action="" id="register" class="input-group">
+          <input type="text" class="input-field" placeholder="Enter Email Address" required>
+          <input type="text" class="input-field" placeholder="Enter User Name" required>
+          <input type="text" class="input-field" placeholder="Enter Password" required>
+          <input type="text" class="input-field" placeholder="Confirm Password" required>
+          <button type="submit" class="submit-btn">Register</button>
+          <P id="hide-form" onclick="hideForm()">hide</P>
+      </form>
+  </div>
 
   </div>
-    </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-     <script>
+  <!--------------------------------------------------------------------------------------------------------------------->
+
+
+  <!-- ----------------------------------------------- Latest Image Slider Section -----------------------------------------------------  -->
+
+  <section>
+      <div class="games-image-slider">
+          <h2>LATEST GAMES</h2>
+
+          <div class="slider">
+            <div class="swiper">
+              
+            <div class="swiper-wrapper">
+              <div class="swiper-slide"><img src="images/ghostbbuster.webp" alt="">
+                <p>PUBG is a player versus player shooter game <br> in which up to one hundred players fight in a  <br> battle royale </p>
+              </div>
+              <div class="swiper-slide"><img src="images/capsule_616x353.jpg" alt="">
+                 <p>PUBG is a player versus player shooter game <br> in which up to one hundred players fight in a  <br> battle royale </p>
+              </div>
+              <div class="swiper-slide"><img src="images/6hbuqs0kmxnkmy0t_1622274324.jpg" alt="">
+                <p>PUBG is a player versus player shooter game <br> in which up to one hundred players fight in a  <br> battle royale </p>
+              </div>
+              <div class="swiper-slide"><img src="images/EGS_GothamKnightsDeluxe_WarnerBrosGamesMontreal_Editions_S1_2560x1440-f9c8e9acb58e2c897728033038f2a499.jpg" alt="">
+                <p>PUBG is a player versus player shooter game <br> in which up to one hundred players fight in a  <br> battle royale </p>
+              </div>
+            </div>
+            </div>
+           <div class="swiper-pagination"></div>    
+          </div>
+       </div>
+  </section>
+
+  <section>
+     <div class="free-games">
+      <h2>FREE GAMES</h2>
+     </div>
+  </section>
+
+
+ <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+
+  <script>
         const swiper = new Swiper('.swiper', {
-  // Optional parameters
-  autoplay: {
-    delay : 3000,
-    disableOnInteraction: false,
-  },
-  loop: true,
+  
+       autoplay: {
+       delay : 3000,
+       disableOnInteraction: false,
+       },
+       loop: true,
 
-  // If we need pagination
-  pagination: {
-    el: '.swiper-pagination',
-  },
+    pagination: {
+       el: '.swiper-pagination',
+    },
 
-  // Navigation arrows
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
 
-});
+    navigation: {
+       nextEl: '.swiper-button-next',
+       prevEl: '.swiper-button-prev',
+    },
+
+  });
+
+  /*-----------------------Form Visible ----------------------------*/
+      
+  function butoon(){
+       
+         document.getElementById("loginForm").style.backgroundColor = "black";
+         document.getElementById("loginForm").style.display = "block";
+         document.getElementById("loginForm").style.top = "-130px";
+        
+     }
+
+  /*-------------------Hide Form -------------------------------*/
+
+  function hideForm(){
+
+    document.getElementById("loginForm").style.display = "none";
+
+  }
+  
+
+ /*---------------------------------Login / Registro Button Click -------------------------------*/
+
+     var x = document.getElementById("login");
+     var y = document.getElementById("register");
+     var z = document.getElementById("btn");
+
+     function register(){
+        x.style.left = "-400px";
+        y.style.left = "35px";
+        z.style.left = "110px";
+     }
+
+     function login(){
+        x.style.left = "35px";
+        y.style.left = "450px";
+        z.style.left = "0";
+     }
+
+
      </script>
+
 </body>
 </html>

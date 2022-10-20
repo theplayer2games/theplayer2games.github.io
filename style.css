@@ -3,64 +3,264 @@
     padding: 0;
     box-sizing: border-box;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: white;
 }
-body{
-    background-color: black;
+   /* -------------------- Container Section ---------------------  */
+
+.container{
+    background-image:linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)),url(images/apps.40411.14047496556148589.9fda5cef-7995-4dbb-a626-66d2ab3feb4f.d87f046c-667d-4ce7-98bc-eba2b535dc94);
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
 }
-.header{
-    background-color: rgb(23, 21, 21);
-    padding: 20px 80px;
+header{
+    width: 100%;
+    height: 10vh;
+    background-position: rgba(0,0,0,0.5);
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
-.header img{
-    width: 40px;
-    background-color: aliceblue;
-}
+.logo{
+    width:220px;
+    height: 10vh;
+    background: #fec53a;
+    align-items: center;
+    clip-path: polygon(0 0, 100% 0, 64% 100%, 0% 100%);
+    padding: 0 30px;
 
-.header ul{
+}
+.logo img{
+    color: #fff;
+    width: 60px;
+    height: auto;
+}
+nav ul{
     display: flex;
-}
-.header ul li{
-    padding: 19px 20px;
     list-style: none;
-  
 }
-.header ul li a{
+nav ul li{
+    width: 130px;
+
+}
+nav ul li a{
     text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+}
+nav ul li:first-child a{
+      color: #fec53a;
+}
+nav ul li a:hover{
+    color: #fec53a;
+    transition: .5s;
+}
+nav ul li:last-child{
+    color: #fff;
+    font-weight: 600;
     cursor: pointer;
-    transition: 0.3s all ease-in;
 }
-.header ul li:first-child a{
-    color: chartreuse;
-}
-
-.header ul li a:hover{
-    color: rgb(53, 225, 10);
-    transition: 0.3s all;
-}
-.fa-solid{
-    color: rgb(67, 246, 246);
-}
-.fa-solid:hover{
-    color: rgb(53, 255, 10);
-}
-.header ul li a i{
-    font-size: 17px;
+nav ul li:last-child:hover{
+    color: #fec53a;
 }
 
-.swiper{ 
-    margin-top: 45px;
+/*------------------------------------------------Content desc ---------------------------------*/
+
+.content-wrapper{
     width: 80%;
+    min-height: 60vh;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+}
+h1{
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+.content-desc p{
+    width: 600px;
+    font-size: 1.3rem;
+    line-height: 2rem;
+    margin-bottom: 10px;
+}
+.caracter{
+    width: 400px;
+    height: 400px;
+    background:  linear-gradient(rgba(38, 2, 39, 0.849),rgba(204, 115, 14));
+    position: relative;
+    margin-top: 80px;
+}
+.caracter::after{
+    content: '';
+    width: 400px;
+    height: 400px;
+    background: url(images/character.png);
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    bottom: 0;
+    left: -130px;
+}
+
+/*------------------------------------------------------------Login form-----------------------------------------*/
+
+#loginForm{
+    width: 75%;
+    position: absolute;
+    height: 500px;
+ /*   background-color: #fff;*/
+    top: -800px;
+    left: 0;
+    transform: translate(15%, 50%);
+    display: none;
+    background-image: linear-gradient(rgba(58, 1, 78, 0.4),rgba(87, 20, 111, 0.4)),url(images/assassins_creed_iv_2-wallpaper-1366x768.jpg);
+    background-size: cover;
+    transition: 60s all;
+}
+
+.form-box{
+    width: 350px;
+    height: 430px;
+    position: relative;
+    margin: 10% auto;
+  /*  background-color: #FFF;*/
+    clip-path: polygon(0 0, 95% 0, 100% 100%, 5% 100%);
+    padding: 5px;
+    overflow: hidden;
+    background:  linear-gradient(rgba(83, 73, 2, 0.849),rgb(40, 12, 38));
+}
+.button-box{
+    width: 220px;
+    margin: 35px auto;
+    position: relative;
+    box-shadow: 0 0 20px 9px #d6470e1f;
+    border-radius: 30px;
+}
+.toggle-btn{
+    padding: 10px 30px;
+    cursor: pointer;
+    background-color: transparent;
+    border: 0;
+    outline: none;
+    position: relative;
+}
+#btn{
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 110px;
+    height: 100%;
+    background: linear-gradient(to right, #1030ff, #17ff06);
+    border-radius: 30px;
+    transition: .5s;
+}
+.input-group p{
+    text-align: center;
+    color: #17ff06;
+    cursor: pointer;
+}
+.input-group{
+    top: 130px;
+    position: absolute;
+    width: 280px;
+    transition: .5s;
+}
+.input-field{
+    width: 100%;
+    padding: 10px 0;
+    margin: 5px 0;
+    border-left: 0;
+    border-top: 0;
+    border-right: 0;
+    border-bottom: 1px solid rgb(239, 236, 236);
+    outline: none;
+    background: transparent;
+}
+::-webkit-input-placeholder{
+    color: #fff;
+}
+
+.submit-btn{
+    width: 85%;
+    padding: 10px 30px;
+    cursor: pointer;
+    display: block;
+    margin: 25px auto;
+    background: linear-gradient(to right, #104cff, #17ff06);
+    border: 0;
+    outline: none;
+    border-radius: 30px;
+}
+.submit-btn a{
+    text-decoration: none;
+    color: black;
+}
+
+
+#login{
+    left: 35px;
+}
+#register{
+    left: 450px;
+}
+
+/*-----------------------------------------------------------------------------------------------------------*/
+
+
+/*-------------------------------------------------------Game images slider section --------------------------------------------------*/
+
+.games-image-slider{
+       width: 100%;
+       height: 650px;
+       background-color: rgb(9, 4, 4);
+       padding: 40px 0;
+}
+.games-image-slider h2{
+    color:#fec53a;
+    text-align: center;
+}
+.swiper{ 
+    margin-top: 60px;
+    position: absolute;
+    width: 60%;
     height: fit-content;
+}
+
+.swiper-slide p{
+    color: #f3fef7;
+    position: absolute;
+    top:310px;
+    z-index: 100;
+    font-size: 1.3rem;
+    text-align: left;
+    margin: 10px 250px 0 50px;
+    font-weight: bold;
+    line-height: 2rem;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 .swiper-slide img{
     
     width: 100%;
-    height: 550px;
-    border-radius: 20px 0 20px 0;
+    height: 500px;
+    border-radius: 10px;
 }
 .swiper .swiper-button-prev, .swiper .swiper-button-next{
     color: rgb(10, 12, 137);
+}
+
+
+/*----------------------------free games section-----------------------------------*/
+
+.free-games{
+    width: 100%;
+    height: 700px;
+    background-color: rgb(9, 4, 4);
+    padding: 40px 0;
+}
+.free-games  h2{
+    color:#fec53a;
+    text-align: center;
+    z-index: 300;
 }
