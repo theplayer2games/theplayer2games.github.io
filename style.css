@@ -251,11 +251,11 @@ h1{
 }
 
 
-/*----------------------------free games section-----------------------------------*/
+/*----------------------------Best Seller games section-----------------------------------*/
 
 .free-games{
     width: 100%;
-    height: 700px;
+    min-height: 100vh;
     background-color: rgb(9, 4, 4);
     padding: 40px 0;
 }
@@ -263,4 +263,41 @@ h1{
     color:#fec53a;
     text-align: center;
     z-index: 300;
+    margin: 0 0 40px 0;
+}
+.dox-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 80%;
+    margin: auto;
+}
+.box{
+    flex: 1 1 200px;
+    margin: 15px 5px;
+    position: relative;
+}
+.box .image{
+   padding: 10px;
+   text-align: center;
+}
+.box .image img{
+    width: 250px;
+    height: 300px;
+}
+.box .info{
+    justify-content: space-between;
+    display: flex;
+    margin: 0 20px;
+}
+.box .info .title{
+    color: #fff;
+    font-size: 15px;
+    padding: 0 10px;
+}
+.box .info .price{
+    color: rgb(128, 125, 125);
+    cursor: pointer;
+    text-align: center;
 }
