@@ -1,0 +1,145 @@
+{
+    "Mobile": [
+        {
+            "name" : "Fun Blaster",
+            "packages" : [
+                {"price":63,"description":"this is a good package"},
+                {"price":129,"description":"this is a good package"},
+                {"price":130,"description":"this is a good package"},
+                {"price":217,"description":"this is a good package"},
+                {"price":297,"description":"this is a good package"},
+                {"price":327,"description":"this is a good package"},
+                {"price":447,"description":"this is a good package"}
+                ]
+            
+        },
+        {
+            "name" : "Internet Cards",
+            "packages" : [
+                {"price":59,"description":"this is a good package"},
+                {"price":119,"description":"this is a good package"},
+                {"price":239,"description":"this is a good package"},
+                {"price":395,"description":"this is a good package"},
+                {"price":695,"description":"this is a good package"},
+                {"price":995,"description":"this is a good package"},
+                {"price":1195,"description":"this is a good package"},
+                {"price":1595,"description":"this is a good package"},
+                {"price":1995,"description":"this is a good package"},
+                {"price":2995,"description":"this is a good package"}
+            ]
+        },
+        {
+            "name" : "Anytime Data",
+            "packages" :[
+                {"price":77,"description":"this is a good package"},
+                {"price":105,"description":"this is a good package"},
+                {"price":155,"description":"this is a good package"},
+                {"price":195,"description":"this is a good package"},
+                {"price":277,"description":"this is a good package"}
+            ]
+        },
+        {
+            "name" : "Work and Learn",
+            "packages" : [
+                {"price":218,"description":"this is a good package"},
+                {"price":654,"description":"this is a good package"},
+                {"price":706,"description":"this is a good package"},
+                {"price":1307,"description":"this is a good package"}
+            ]
+        },
+        {
+            "name" : "Tourist Plan",
+            "packages" : [
+                {"price":2450,"description":"this is a good package"}
+            ]
+        },
+        {
+            "name" : "Voice Packages",
+            "packages" : [
+                {"price":49,"description":"this is a good package"},
+                {"price":163,"description":"this is a good package"},
+                {"price":169,"description":"this is a good package"},
+                {"price":173,"description":"this is a good package"},
+                {"price":469,"description":"this is a good package"},
+                {"price":495,"description":"this is a good package"},
+                {"price":577,"description":"this is a good package"},
+                {"price":650,"description":"this is a good package"},
+                {"price":690,"description":"this is a good package"},
+                {"price":899,"description":"this is a good package"},
+                {"price":999,"description":"this is a good package"}
+            ]
+        }
+    ],
+    "HBB" : [
+        {
+            "name" : "Internet Cards ",
+            "packages" : [
+                {"price":59,"description":"this is a good package"},
+                {"price":119,"description":"this is a good package"},
+                {"price":239,"description":"this is a good package"},
+                {"price":460,"description":"this is a good package"},
+                {"price":651,"description":"this is a good package"},
+                {"price":851,"description":"this is a good package"},
+                {"price":1241,"description":"this is a good package"}
+            ]
+        },
+        {
+            "name" : "Work and Learn ",
+            "packages" : [
+                {"price":290,"description":"this is a good package"},
+                {"price":654,"description":"this is a good package"},
+                {"price":706,"description":"this is a good package"},
+                {"price":1307,"description":"this is a good package"}
+            ]
+        },
+        {
+            "name" : "Unlimited Data",
+            "packages" : [
+                {"price":254,"description":"this is a good package"},
+                {"price":470,"description":"this is a good package"},
+                {"price":782,"description":"this is a good package"},
+                {"price":867,"description":"this is a good package"},
+                {"price":1523,"description":"this is a good package"},
+                {"price":2552,"description":"this is a good package"}
+            ]
+        },
+        {
+            "name" : "Super Saver",
+            "packages" : [
+                {"price":540,"description":"this is a good package"},
+                {"price":299,"description":"this is a good package"}
+            ]
+        },
+        {
+            "name" : "Youtube and Social Media",
+            "packages" : [
+                {"price":310,"description":"this is a good package"},
+                {"price":575,"description":"this is a good package"}
+            ]
+        },
+        {
+            "name" : "Night Time Addon",
+            "packages" : [
+                {"price":395,"description":"this is a good package"},
+                {"price":1313,"description":"this is a good package"}
+            ]
+        },
+        {
+            "name" : "Gamer Package",
+            "packages" : [
+                {"price":636,"description":"this is a good package"}
+            ]
+        }
+    ],
+    "DTV" :[
+        {
+            "name" :"Dialog TV",
+            "packages" : [
+                {"price":554,"description":"this is a good package"},
+                {"price":733,"description":"this is a good package"},
+                {"price":734,"description":"this is a good package"},
+                {"price":899,"description":"this is a good package"}
+            ]
+        }
+    ]
+}
